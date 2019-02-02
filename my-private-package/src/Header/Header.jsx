@@ -2,6 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { login, logout } from './reducer'
 
+import './Header.css'
+
 class Header extends React.Component {
   render() {
     return (
