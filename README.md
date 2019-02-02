@@ -21,6 +21,7 @@ This repo was created to demonstrate the following issue: https://github.com/red
 ````
 Could not find "store" in the context of "Connect(Header)". Either wrap the root component in a <Provider>, or pass a custom React context provider to <Provider> and the corresponding React context consumer to Connect(Header) in connect options.
 ````
+![Error screenshot](could-not-find-store-in-context-error.png?raw=true "Error screenshot")
 
 ## See it working correctly in *react-redux v5.1.1*
 
@@ -41,6 +42,9 @@ Could not find "store" in the context of "Connect(Header)". Either wrap the root
   $ cd my-app
   $ npm install && npm run link && npm start
 ````
+
+**Step 4:** See the app working correctly:
+![Correct screenshot](my-app-correct-screen.png?raw=true "Correct screenshot")
 
 ## License
 MIT
