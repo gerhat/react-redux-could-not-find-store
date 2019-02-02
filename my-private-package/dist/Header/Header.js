@@ -48,12 +48,16 @@ function (_React$Component) {
       var _this = this;
 
       return _react.default.createElement("header", {
-        className: "App-header"
+        className: "Header"
       }, _react.default.createElement("h4", null, "Connected component from my-private-package"), this.props.isLoggedIn ? _react.default.createElement("p", null, this.props.username, _react.default.createElement("button", {
+        onClick: function onClick() {
+          return _this.props.logout();
+        }
+      }, "logout")) : _react.default.createElement("p", null, _react.default.createElement("button", {
         onClick: function onClick() {
           return _this.props.login();
         }
-      }, "logout")) : _react.default.createElement("p", null, _react.default.createElement("button", null, "login")));
+      }, "login")));
     }
   }]);
 

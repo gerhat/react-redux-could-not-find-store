@@ -22,12 +22,14 @@
     "react-dom": "^16.7.0",
     "react-redux": "6.0.0",
     "redux": "^4.0.1",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "copyfiles": "^2.1.0"
   },
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "NODE_ENV=production babel --config-file ./babel.config.js ./src --out-dir ./dist",
+    "copy-files": "copyfiles -u 2 \"./src/Header/*.css\" \"./dist/Header/\"",
+    "build": "NODE_ENV=production babel --config-file ./babel.config.js ./src --out-dir ./dist && npm run copy-files",
     "link": "npm link"
   }
 }
