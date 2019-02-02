@@ -11,6 +11,8 @@ var _reactRedux = require("react-redux");
 
 var _reducer = require("./reducer");
 
+require("./Header.css");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -48,12 +50,16 @@ function (_React$Component) {
       var _this = this;
 
       return _react.default.createElement("header", {
-        className: "App-header"
+        className: "Header"
       }, _react.default.createElement("h4", null, "Connected component from my-private-package"), this.props.isLoggedIn ? _react.default.createElement("p", null, this.props.username, _react.default.createElement("button", {
+        onClick: function onClick() {
+          return _this.props.logout();
+        }
+      }, "logout")) : _react.default.createElement("p", null, _react.default.createElement("button", {
         onClick: function onClick() {
           return _this.props.login();
         }
-      }, "logout")) : _react.default.createElement("p", null, _react.default.createElement("button", null, "login")));
+      }, "login")));
     }
   }]);
 

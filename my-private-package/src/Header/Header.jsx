@@ -2,23 +2,25 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { login, logout } from './reducer'
 
+import './Header.css'
+
 class Header extends React.Component {
   render() {
     return (
-      <header className="App-header">
+      <header className="Header">
         <h4>Connected component from my-private-package</h4>
         {
           this.props.isLoggedIn
           ?
             <p>
               {this.props.username}
-              <button onClick={()=>this.props.login()}>
+              <button onClick={()=>this.props.logout()}>
                 logout
               </button>
             </p>
           :
             <p>
-                <button>login</button>
+                <button onClick={()=>this.props.login()}>login</button>
             </p>
         }
       </header>

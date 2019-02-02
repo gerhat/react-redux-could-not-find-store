@@ -1,0 +1,14 @@
+.Header {
+  background-color: #282c34;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Header button {
+  margin-left: 20px;
+  vertical-align: middle;
+}
