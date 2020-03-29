@@ -10,20 +10,20 @@
     "redux": ">=4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/node": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.3.0",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "babel-core": "^7.0.0-bridge.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-redux": "6.0.0",
-    "redux": "^4.0.1",
-    "rimraf": "^2.6.3",
-    "copyfiles": "^2.1.0"
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "7.2.0",
+    "redux": "^4.0.5",
+    "rimraf": "^3.0.2",
+    "copyfiles": "^2.2.0"
   },
   "main": "dist/index.js",
   "scripts": {
